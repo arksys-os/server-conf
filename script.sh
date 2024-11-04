@@ -17,7 +17,7 @@ install_packages() {
         ubuntu|debian)
             echo "Detected Debian-based system. Installing packages..."
             sudo apt update && sudo apt upgrade -y
-            sudo apt install -y apache bind9 build-essential curl dnsutils fail2ban git htop lsof \
+            sudo apt install -y apache2 bind9 build-essential curl dnsutils fail2ban git htop lsof \
                                 ncdu net-tools neovim nginx nmap rsync shellcheck sysstat tmux tree unzip
             ;;
         arch)
